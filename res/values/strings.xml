@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">精彩周末</string>
+    <string name="app_key">12255697</string>
+    <string name="app_secret">2e2af0a9f6da43e98d6ca0207cb8eba6</string>
+    <string name="api_url">http://api.dianping.com/v1/position/get_coordinate</string>
+    <string-array name="sort_type">
+        <item>默认</item>
+        <item>星级高优先</item>
+        <item>产品评价高优先</item>
+        <item>环境评价高优先</item>
+        <item>服务评价高优先</item>
+        <item>点评数量多优先</item>
+        <item>离传入经纬度坐标距离近优先</item>
+        <item>人均价格低优先</item>
+        <item>人均价格高优先</item>
+    </string-array>
+   <string name="main_title1">团购</string>
+   <string name="main_title2">点评</string>
+   <string name="main_title3">活动</string>
+   <string name="main_title4">App</string>
+   <string name="listgroup1">团购</string>
+   <string name="listgroup2">优惠券</string>
+   <string name="listgroup3">在线预订</string>
+     <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="douban_key">06336ec42188cd60129a4c4c649a6820</string>
+    <string name="douban_secret">b07c47864e9dbb20</string>
+        <string-array name="comment_array">
+        <item>电影</item>
+        <item>音乐</item>
+        <item>图书</item>
+    </string-array>
+        <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="press_again_exit">再按一次退出</string>
+</resources>

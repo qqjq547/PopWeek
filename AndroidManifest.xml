@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjq.week"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+    <!-- 有米传媒 Android SDK 所需权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+ <!-- 可选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <application
+        android:name="com.hjq.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="M0uwrF8RcmMEwcmPeLViGtFH" />
+
+        <activity
+            android:name="com.hjq.ui.FirstActivity">
+        </activity>
+        <activity
+            android:name="com.hjq.ui.PoiDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.hjq.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjq.ui.LocalActivity">
+        </activity>
+        <activity
+            android:name="com.hjq.ui.DetailActivity" >
+        </activity>
+        <activity
+            android:name="com.hjq.ui.WebActivity" >
+        </activity>
+        <activity android:name="com.hjq.ui.CommentActivity" >
+        </activity>
+           <activity android:name="com.hjq.ui.EventActivity" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.hjq.ui.MapActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.baidu.mapapi.search.PlaceCaterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <meta-data
+            android:name="com.dianping.APP_KEY"
+            android:value="@string/app_key" />
+        <meta-data
+            android:name="com.dianping.APP_SECRET"
+            android:value="@string/app_secret" />
+        <meta-data
+            android:name="com.dianping.API_URL"
+            android:value="@string/api_url" />
+   <!-- dianjin start -->
+        <activity
+            android:name="com.bodong.dianjinweb.downloadmanager.DianJinDownloadManager"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.bodong.dianjinweb.web.DianjinWebAcitivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <service android:name="com.bodong.dianjinweb.service.DianJinService" >
+        </service>
+        <!-- dianjin end -->
+    </application>
+
+</manifest>
