@@ -1,4 +1,4 @@
-package com.hjq.app;
+﻿package com.hjq.app;
 
 import android.app.Application;
 import android.content.Context;
@@ -17,6 +17,8 @@ public class MyApplication extends Application{
 		    super.onCreate();
 			mInstance = this;
 			initEngineManager(this);
+///////
+
 		}
 		
 		public void initEngineManager(Context context) {
